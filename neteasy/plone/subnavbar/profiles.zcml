@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="neteasy.plone.subnavbar">
+
+    <include package="Products.GenericSetup" file="meta.zcml" />
+
+    <genericsetup:registerProfile
+        name="subnavbar"
+        title="Plone second level navbar"
+        directory="profiles/default"
+        description="Adds a second-level navigation bar to a Plone site"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+</configure>

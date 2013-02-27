@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers name="" meta_type="ComponentRegistry">
+ <layer name="subnavbarView"
+    interface="neteasy.plone.subnavbar.interfaces.ISubnavbarView"/>
+</layers>

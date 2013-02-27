@@ -1,0 +1,17 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:five="http://namespaces.zope.org/five">
+
+
+  <browser:viewlet
+    name="neteasy.plone.subnavbar.browser.subnavbar"
+    for="*"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class=".browser.subnavbar.SubnavbarViewlet"
+    template="subnavbar.pt"
+    layer="neteasy.plone.subnavbar.interfaces.ISubnavbarView"
+    permission="zope2.View"
+  />
+
+</configure>

@@ -1,0 +1,45 @@
+/* <dtml-with base_properties>  - for variable replacement */
+
+/* The global section tabs. */
+#portal-subnavbar {
+	background-color: transparent;
+	padding: 0.25em 0em 0em 3em;
+	white-space: nowrap;
+	list-style: none;
+	margin: 0;
+	height: auto;
+	line-height: normal;
+	border-top: &dtml-globalBorderColor; &dtml-borderWidth; &dtml-borderStyle;;
+}
+#portal-subnavbar li {
+	display: inline;
+}
+#portal-subnavbar li a {
+	/* The normal, unselected tabs. They are all links */
+	background-color: transparent;
+	border-color: &dtml-globalBorderColor;;
+	border-width: &dtml-borderWidth;;
+	border-style: &dtml-borderStyle; &dtml-borderStyle; none &dtml-borderStyle;;
+	color: &dtml-globalFontColor;;
+	height: auto;
+	margin-right: 0.5em;
+	padding: 0em 1.25em;
+	text-decoration: none;
+	text-transform: &dtml-textTransform;;
+}
+#portal-subnavbar li.selected a {
+	/* The selected tab. There's only one of this */
+	background-color: &dtml-globalBackgroundColor;;
+	border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+	border-bottom: &dtml-globalBackgroundColor; &dtml-borderWidth; &dtml-borderStyle;;
+	color: &dtml-globalFontColor;;
+}
+#portal-subnavbar li a:hover {
+	background-color: &dtml-globalBackgroundColor;;
+	border-color: &dtml-globalBorderColor;;
+	border-bottom-color: &dtml-globalBackgroundColor;;
+	color: &dtml-globalFontColor;;
+}
+
+/* do not remove - for variable replacement 
+</dtml-with> */

@@ -1,0 +1,14 @@
+<h5 class="hiddenStructure">Subsections</h5>
+<ul id="portal-subnavbar"
+    tal:define="navbardata view/contentlist;
+                navbarobjects python: navbardata['contents'];
+                navbarselected python: navbardata['selected'];"
+    tal:condition="python: navbardata['contents'] != []" >
+	<li tal:repeat="navbarobject navbarobjects"
+    	tal:attributes="class python: navbarobject == navbarselected and 'selected' or 'plain';">
+		<a href="#"
+	  	   tal:attributes="href navbarobject/absolute_url;
+	                       title navbarobject/title_or_id;"
+	   	   tal:content="navbarobject/title_or_id">Navbar</a>
+	</li>
+</ul>

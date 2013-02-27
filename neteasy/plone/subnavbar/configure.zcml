@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="neteasy.plone.subnavbar">
+
+    <five:registerPackage package="." initialize=".initialize" />
+    
+	<cmf:registerDirectory name="neteasy.plone.subnavbar"
+                           directory="skins/neteasy.plone.subnavbar"
+                           recursive="True"
+    />
+
+    <include file="browser/configure.zcml" />
+    <include file="profiles.zcml" />
+
+</configure>

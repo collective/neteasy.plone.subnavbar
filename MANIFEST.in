@@ -1,0 +1,6 @@
+recursive-include neteasy *
+global-exclude *pyc
+global-exclude *pyo
+global-exclude *egg-info
+global-exclude .DS*
+

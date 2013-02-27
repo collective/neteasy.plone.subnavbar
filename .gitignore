@@ -1,0 +1,8 @@
+
+Paste*/*
+
+*.pyc
+
+neteasy.plone.subnavbar.egg-info/*
+
+*.gz
