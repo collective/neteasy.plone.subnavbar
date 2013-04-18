@@ -6,3 +6,5 @@ Paste*/*
 neteasy.plone.subnavbar.egg-info/*
 
 *.gz
+
+.DS_Store

@@ -5,7 +5,7 @@ version = '1.1a1'
 
 setup(name='neteasy.plone.subnavbar',
       version=version,
-      description="A second level navigaion for Plone 4.",
+      description="This product will provide a second level navbar for Plone sites.",
       long_description=open("README.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -14,8 +14,8 @@ setup(name='neteasy.plone.subnavbar',
         "Programming Language :: Python",
         ],
       keywords='navigation plone ',
-      author='Neteasy',
-      author_email='espen@medialog.no',
+      author='Jim Nelson',
+      author_email='neteasy@medialog.no',
       url='https://github.com/collective/neteasy.plone.subnavbar/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
